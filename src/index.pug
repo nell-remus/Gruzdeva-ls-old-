@@ -23,7 +23,7 @@ html(lang="en")
                       li.menu__item
                         a(href="").menu__link #{item}
               .header__links
-                - var icons = ["Inst", "Vk", "Github"]
+                - var icons = ["Inst", "vk", "github"]
                 ul.socials
                   each item in icons
                     li.socials__item
@@ -36,7 +36,7 @@ html(lang="en")
             .hero__bottom-btn
               a(href="#").scroll-down-btn Скролл  
                 .scroll-down-icon
-                  +icon("Scroll", "scroll__img")
+                  +icon("scroll", "scroll__img")
       section.about-section
         .container
           .about
@@ -108,7 +108,7 @@ html(lang="en")
           .content__links
             .links__desc
             .links__socials
-              - var icons = ["Inst", "Vk", "Github"]
+              - var icons = ["Inst", "vk", "github"]
                 ul.socials
                   each item in icons
                     li.socials-item
