@@ -90,8 +90,67 @@ html(lang="en")
                         circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--under
                         circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--above
                     .skill__title #{skill}
-
-
+      section.works
+        .works__title 
+          h2.main__title Мои работы
+        .works__preview
+          .preview-image
+            +image("content/preview.png", ".preview-image__img")
+          .preview-desc
+            .preview-desc__icon
+              p HTML
+              p CSS
+              p Javascript
+            h3.preview-desc__title Сайт школы образования
+            .preview-desc__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            a(href="#").preview-desc__link 
+              +icon("Link", "link__img") 
+              p Посмотреть сайт
+      .last-section-img
+        section.reviews
+          .reviews__title 
+            h2.title Что обо мне говорят
+            .navigation
+              button(type="button").btn.left-btn
+                .left-btn__arrow
+                  +icon("Short-Arrow", "arrow--left")
+              button(type="button").btn.right-btn
+                .right-btn__arrow
+                  +icon("Short-Arrow", "arrow--right")
+          .reviews__content
+            .content__elem-style
+              +icon("Quote", "elem-style")
+            .content__elem.content__elem--one
+              .content__elem-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+              .content__elem-data
+                .elem-data__icon
+                  +image("content/Dmitriy.png", ".icon-autor")
+                .elem-data__autor
+                  h3 Дмитрий Ковальчук
+                  p Основатель Loftschool
+            .content__elem-style
+              +icon("Quote", "elem-style")
+            .content__elem.content__elem--two
+              .content__elem-text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах
+              .content__elem-data
+                .elem-data__icon
+                  +image("content/Vladimir.png", ".icon-autor")
+                .elem-data__autor
+                  h3 Владимир Сабанцев
+                  p Преподаватель
+        section.feedback
+          .feedback__main-title Связаться со мной
+          form(action="").feedback-form
+            .feedback-form__row
+              .form-input-title Введите ваше имя 
+              input(type="text" value="Ковальчук Дмитрий").form__input.form__input--name
+              .form-input-title Введите ваш email
+              input(type="text" value="loftschool@study.com").form__input.form__input--email
+            .feedback-form__row--two
+              .form-input-title Сообщение к письму
+              input(type="text" value="Требуется ваша помощь в создании сайта. Интересую сроки и цена вопроса").form__input.form__input--massage
+            .feedback-form__btn-send
+              input(type="button").btn-send
       footer.footer
         .footer-container__content-section-one
           .content__date &#169; 2020	
