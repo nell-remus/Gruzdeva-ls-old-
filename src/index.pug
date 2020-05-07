@@ -23,7 +23,7 @@ html(lang="en")
                       li.menu__item
                         a(href="").menu__link #{item}
               .header__links
-                - var icons = ["Inst", "Vk", "Github"]
+                - var icons = ["Inst", "vk", "github"]
                 ul.socials
                   each item in icons
                     li.socials__item
@@ -36,7 +36,7 @@ html(lang="en")
             .hero__bottom-btn
               a(href="#").scroll-down-btn Скролл  
                 .scroll-down-icon
-                  +icon("Scroll", "scroll__img")
+                  +icon("scroll", "scroll__img")
       section.about-section
         .container
           .about
@@ -74,22 +74,22 @@ html(lang="en")
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.<br>Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
           .content__skills
             ul.user-skills
-            - 
-              var skills = [
-                ['Front-end', ['HTML5', 'CSS3', 'Javascript', 'Jquery и Vue.js']],
-                ['Workflow', ['GIT', 'Terminal', 'Gulp', 'Webpack']],
-              ]
-            each item in skills 
-              li.user-skills__item.skills-row 
-                h3.skills-row__title #{item[0]}
-                ul.skills-row__list
-                  each skill in item[1]
-                    li.skills-row__item
-                      .skill
-                        svg(viewBox="0 0 200 200" preserveAspectRatio="none").skill__shape
-                          circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--under
-                          circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--above
-                      .skill__title #{skill}
+          - 
+            var skills = [
+              ['Front-end', ['HTML5', 'CSS3', 'Javascript', 'Jquery и Vue.js']],
+              ['Workflow', ['GIT', 'Terminal', 'Gulp', 'Webpack']],
+            ]
+          each item in skills 
+            li.user-skills__item.skills-row 
+              h3.skills-row__title #{item[0]}
+              ul.skills-row__list
+                each skill in item[1]
+                  li.skills-row__item
+                    .skill
+                      svg(viewBox="0 0 200 200" preserveAspectRatio="none").skill__shape
+                        circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--under
+                        circle(r="80" cx="100" cy="100").skill__circle.skill__circle--position--above
+                    .skill__title #{skill}
       section.works
         .works__title 
           h2.main__title Мои работы
@@ -167,7 +167,7 @@ html(lang="en")
           .content__links
             .links__desc
             .links__socials
-              - var icons = ["Inst", "Vk", "Github"]
+              - var icons = ["Inst", "vk", "github"]
                 ul.socials
                   each item in icons
                     li.socials-item
